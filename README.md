@@ -34,5 +34,5 @@ It's basically the same as [Create React App](https://create-react-app.dev/docs/
 ```
 
 ## Todos
-- [ ] Deploy to Netlify
+- [x] Deploy to Netlify
 - [ ] Add dark mode support
