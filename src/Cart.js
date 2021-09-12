@@ -21,14 +21,13 @@ export default function Cart({ cart }) {
       return { price: product.price_id, quantity: product.quantity };
     });
 
-    // TODO: add successUrl and cancelUrl after setting up Netlify
     stripeLoadedPromise.then((stripe) => {
       stripe
         .redirectToCheckout({
           lineItems: lineItems,
           mode: "payment",
-          successUrl: "http://localhost:3000/",
-          cancelUrl: "http://localhost:3000/",
+          successUrl: "https://superm2021.netlify.app/",
+          cancelUrl: "https://superm2021.netlify.app/",
           customerEmail: email,
         })
         .then((response) => {
