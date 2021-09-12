@@ -3,6 +3,9 @@
 ## About
 With provided back-end API, I built this web store with **React** and its latest features like **Hooks**.
 
+## Demo
+https://superm2021.netlify.app/
+
 ## How to Deploy?
 Clone to your own host and run `npm ci`, then run `npm start`. 
 
