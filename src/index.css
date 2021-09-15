@@ -22,6 +22,9 @@
   --accent-3: #de7699;
   --accent-4: #e6c3ce;
   --accent-5: #fff2f7;
+
+  --surface-color: white;
+  --surface-shadow: #c4c4c4;
 }
 
 body {
@@ -31,7 +34,7 @@ body {
 
 body.dark {
   color: white;
-  --netural-5: #222;
+  --neutral-5: #222;
   --surface-color: #444;
   --surface-shadow: #222;
 }
@@ -195,7 +198,7 @@ input:focus {
 
 /* NAVBAR */
 .navbar {
-  background-color: white;
+  background-color: var(--surface-color);
   padding: 10px;
   box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07),
     0px -3px 7px 1px rgba(0, 0, 0, 0.07);
@@ -318,7 +321,7 @@ input:focus {
 }
 
 .product {
-  background-color: white;
+  background-color: var(--surface-color);
   padding: 15px 20px;
   border-radius: 25px;
   display: grid;
