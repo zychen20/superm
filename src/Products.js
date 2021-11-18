@@ -6,27 +6,12 @@ import Loader from "./Loader.js";
 export default function Products(props) {
   const [products, setProducts] = useState([]);
   const { get, loading } = useFetch(
-    "https://react-tutorial-demo.firebaseio.com/"
+    "https://salty-anchorage-02387.herokuapp.com/"
   );
 
   useEffect(() => {
     get("supermarket.json")
-      .then((data) => {
-        const productsWithPersonalApiId = data.map(product => {
-          if(product.id === 1) {
-            product.price_id = "price_1JYf6tJBmISZFmCk92UpLr3A";
-          } else if (product.id === 2) {
-            product.price_id = "price_1JYfQdJBmISZFmCkAoGXSgUV";
-          } else if (product.id === 3) {
-            product.price_id = "price_1JYfR7JBmISZFmCkoTV8GCCm";
-          } else if (product.id === 4) {
-            product.price_id = "price_1JYfReJBmISZFmCkTcjhzGNF";
-          }
-          return product;
-        });
-        console.log(productsWithPersonalApiId);
-        setProducts(productsWithPersonalApiId);
-      })
+      .then((data) => setProducts(data))
       .catch((error) => console.log("Could not load products", error));
   }, [get]);
 
