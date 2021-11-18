@@ -11,7 +11,9 @@ export default function Products(props) {
 
   useEffect(() => {
     get("supermarket.json")
-      .then((data) => {setProducts(data)})
+      .then((data) => {
+        setProducts(data);
+      })
       .catch((error) => console.log("Could not load products", error));
   }, [get]);
 
