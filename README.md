@@ -1,10 +1,7 @@
-# SuperM React Webstore [![Netlify Status](https://api.netlify.com/api/v1/badges/aff972c9-0d40-4af4-83df-c4c92e24fd8a/deploy-status)](https://app.netlify.com/sites/superm-chen/deploys)
+# SuperM React Webstore
 
 ## About
 With provided back-end API, I built this web store with **React** and its latest features like **Hooks**.
-
-## Demo
-https://superm2021.netlify.app/
 
 ## How to Deploy?
 Clone to your own host and run `npm ci`, then run `npm start`. 
